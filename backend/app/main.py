@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.api import careers, optimization
+from app.api import careers, optimization, courses, skills
 
 app = FastAPI(
     title=settings.APP_NAME,
@@ -20,6 +20,8 @@ app.add_middleware(
 # ルーターの登録
 app.include_router(careers.router, prefix="/api", tags=["careers"])
 app.include_router(optimization.router, prefix="/api", tags=["optimization"])
+app.include_router(courses.router, prefix="/api", tags=["courses"])
+app.include_router(skills.router, prefix="/api", tags=["skills"])
 
 @app.get("/")
 async def root():

@@ -28,3 +28,15 @@ npm install -D tailwindcss@^3.3.6 postcss@^8.4.32 autoprefixer@^10.4.16
 ```commandline
 npx tailwindcss init -p
 ```
+
+## 実行
+1. バックエンドの起動
+```commandline
+cd backend
+python run.py
+```
+2. フロントエンドの起動
+```commandline
+cd frontend
+npm run dev
+```

@@ -1,0 +1,22 @@
+# FastAPI
+fastapi
+uvicorn[standard]
+
+# Data Validation
+pydantic
+pydantic-settings
+
+# Environment
+python-dotenv
+
+# CORS
+python-multipart
+
+# 量子アニーリング関連
+openjij
+numpy
+pandas
+
+# Future: Database
+# sqlalchemy==2.0.23
+# alembic==1.13.0

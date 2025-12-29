@@ -1,0 +1,785 @@
+{
+  "courses_master": {
+    "course_001": {
+      "name": "基本情報技術者試験対策",
+      "prerequisites": [],
+      "skills_acquired": [
+        "it_fundamentals",
+        "computer_science_fundamentals",
+        "algorithm_data_structure",
+        "information_security_fundamentals"
+      ],
+      "description": "IT業界の基礎知識を幅広く習得",
+      "estimated_hours": 4,
+      "id": 0
+    },
+    "course_002": {
+      "name": "応用情報技術者試験対策",
+      "prerequisites": [
+        "it_fundamentals"
+      ],
+      "skills_acquired": [
+        "software_engineering",
+        "project_management_professional",
+        "security_professional"
+      ],
+      "description": "より高度なIT知識とマネジメント技術",
+      "estimated_hours": 7,
+      "id": 1
+    },
+    "course_003": {
+      "name": "HTML/CSS完全マスター",
+      "prerequisites": [],
+      "skills_acquired": [
+        "html_css_foundation",
+        "html_css_professional"
+      ],
+      "description": "Webの基本言語を実務レベルまで習得",
+      "estimated_hours": 5,
+      "id": 2
+    },
+    "course_004": {
+      "name": "JavaScript完全マスター",
+      "prerequisites": [
+        "html_css_foundation"
+      ],
+      "skills_acquired": [
+        "javascript_foundation",
+        "javascript_professional"
+      ],
+      "description": "動的なWebページ作成の必須技術",
+      "estimated_hours": 8,
+      "id": 3
+    },
+    "course_005": {
+      "name": "TypeScript実践開発",
+      "prerequisites": [
+        "javascript_professional"
+      ],
+      "skills_acquired": [
+        "typescript_professional"
+      ],
+      "description": "大規模開発に必要な型安全なJavaScript",
+      "estimated_hours": 10,
+      "id": 4
+    },
+    "course_006": {
+      "name": "React実践開発",
+      "prerequisites": [
+        "javascript_professional"
+      ],
+      "skills_acquired": [
+        "react_professional"
+      ],
+      "description": "モダンフロントエンド開発の主力フレームワーク",
+      "estimated_hours": 10,
+      "id": 5
+    },
+    "course_007": {
+      "name": "React上級・パフォーマンス最適化",
+      "prerequisites": [
+        "react_professional",
+        "typescript_professional"
+      ],
+      "skills_acquired": [
+        "react_expert"
+      ],
+      "description": "実務で求められる高度なReact技術",
+      "estimated_hours": 15,
+      "id": 6
+    },
+    "course_008": {
+      "name": "Vue.js実践開発",
+      "prerequisites": [
+        "javascript_professional"
+      ],
+      "skills_acquired": [
+        "vue_professional"
+      ],
+      "description": "学習しやすく実用的なフレームワーク",
+      "estimated_hours": 10,
+      "id": 7
+    },
+    "course_009": {
+      "name": "Next.js フルスタック開発",
+      "prerequisites": [
+        "react_professional",
+        "node_js_professional"
+      ],
+      "skills_acquired": [
+        "next_js_professional"
+      ],
+      "description": "React ベースのフルスタックフレームワーク",
+      "estimated_hours": 15,
+      "id": 8
+    },
+    "course_010": {
+      "name": "モダンCSS・Sass実践",
+      "prerequisites": [
+        "html_css_professional"
+      ],
+      "skills_acquired": [
+        "sass_professional"
+      ],
+      "description": "効率的なスタイル管理とデザインシステム",
+      "estimated_hours": 6,
+      "id": 9
+    },
+    "course_011": {
+      "name": "Python完全マスター",
+      "prerequisites": [],
+      "skills_acquired": [
+        "python_foundation",
+        "python_professional"
+      ],
+      "description": "汎用性の高いプログラミング言語",
+      "estimated_hours": 15,
+      "id": 10
+    },
+    "course_012": {
+      "name": "Django実践Web開発",
+      "prerequisites": [
+        "python_professional",
+        "sql_foundation"
+      ],
+      "skills_acquired": [
+        "django_professional"
+      ],
+      "description": "Pythonの本格的Webフレームワーク",
+      "estimated_hours": 10,
+      "id": 11
+    },
+    "course_013": {
+      "name": "FastAPI モダンAPI開発",
+      "prerequisites": [
+        "python_professional"
+      ],
+      "skills_acquired": [
+        "fastapi_professional",
+        "api_design_professional"
+      ],
+      "description": "高性能で現代的なAPI開発",
+      "estimated_hours": 8,
+      "id": 12
+    },
+    "course_014": {
+      "name": "Java企業システム開発",
+      "prerequisites": [],
+      "skills_acquired": [
+        "java_foundation",
+        "java_professional"
+      ],
+      "description": "企業システムの定番言語",
+      "estimated_hours": 8,
+      "id": 13
+    },
+    "course_015": {
+      "name": "Spring Boot実践開発",
+      "prerequisites": [
+        "java_professional",
+        "sql_professional"
+      ],
+      "skills_acquired": [
+        "spring_boot_professional"
+      ],
+      "description": "Javaエンタープライズ開発の主力",
+      "estimated_hours": 10,
+      "id": 14
+    },
+    "course_016": {
+      "name": "Node.js サーバーサイド開発",
+      "prerequisites": [
+        "javascript_professional"
+      ],
+      "skills_acquired": [
+        "node_js_professional",
+        "express_professional"
+      ],
+      "description": "JavaScriptでのサーバーサイド開発",
+      "estimated_hours": 10,
+      "id": 15
+    },
+    "course_017": {
+      "name": "Go言語 高性能システム開発",
+      "prerequisites": [
+        "linux_professional"
+      ],
+      "skills_acquired": [
+        "go_professional"
+      ],
+      "description": "クラウドネイティブ開発の注目言語",
+      "estimated_hours": 10,
+      "id": 16
+    },
+    "course_018": {
+      "name": "SQL完全マスター",
+      "prerequisites": [],
+      "skills_acquired": [
+        "sql_foundation",
+        "sql_professional"
+      ],
+      "description": "データベース操作の基本から応用まで",
+      "estimated_hours": 10,
+      "id": 17
+    },
+    "course_019": {
+      "name": "データベース設計・最適化",
+      "prerequisites": [
+        "sql_professional"
+      ],
+      "skills_acquired": [
+        "database_design_expert",
+        "sql_expert"
+      ],
+      "description": "実務で必要なDB設計と性能チューニング",
+      "estimated_hours": 10,
+      "id": 18
+    },
+    "course_020": {
+      "name": "NoSQL・MongoDB実践",
+      "prerequisites": [
+        "sql_professional"
+      ],
+      "skills_acquired": [
+        "mongodb_professional"
+      ],
+      "description": "スケーラブルなNoSQLデータベース",
+      "estimated_hours": 10,
+      "id": 19
+    },
+    "course_021": {
+      "name": "AWS基礎から実践まで",
+      "prerequisites": [
+        "linux_foundation"
+      ],
+      "skills_acquired": [
+        "aws_foundation",
+        "aws_professional"
+      ],
+      "description": "クラウドサービスの包括的習得",
+      "estimated_hours": 10,
+      "id": 20
+    },
+    "course_022": {
+      "name": "AWS認定ソリューションアーキテクト",
+      "prerequisites": [
+        "aws_professional",
+        "network_professional"
+      ],
+      "skills_acquired": [
+        "aws_expert",
+        "architecture_design_expert"
+      ],
+      "description": "AWS上級認定とアーキテクチャ設計",
+      "estimated_hours": 10,
+      "id": 21
+    },
+    "course_023": {
+      "name": "Docker・Kubernetes実践",
+      "prerequisites": [
+        "linux_professional"
+      ],
+      "skills_acquired": [
+        "docker_professional",
+        "kubernetes_professional"
+      ],
+      "description": "コンテナ技術の実務活用",
+      "estimated_hours": 10,
+      "id": 22
+    },
+    "course_024": {
+      "name": "インフラ自動化・Terraform",
+      "prerequisites": [
+        "aws_professional",
+        "linux_professional"
+      ],
+      "skills_acquired": [
+        "terraform_professional",
+        "ansible_professional"
+      ],
+      "description": "Infrastructure as Codeの実践",
+      "estimated_hours": 10,
+      "id": 23
+    },
+    "course_025": {
+      "name": "Linux システム管理",
+      "prerequisites": [],
+      "skills_acquired": [
+        "linux_foundation",
+        "linux_professional"
+      ],
+      "description": "サーバー環境の構築と運用",
+      "estimated_hours": 10,
+      "id": 24
+    },
+    "course_026": {
+      "name": "Git・GitHub実践",
+      "prerequisites": [],
+      "skills_acquired": [
+        "git_foundation",
+        "git_professional"
+      ],
+      "description": "チーム開発の必須スキル",
+      "estimated_hours": 10,
+      "id": 25
+    },
+    "course_027": {
+      "name": "CI/CD パイプライン構築",
+      "prerequisites": [
+        "git_professional",
+        "docker_professional"
+      ],
+      "skills_acquired": [
+        "github_actions_professional",
+        "jenkins_professional"
+      ],
+      "description": "自動化されたソフトウェアデリバリー",
+      "estimated_hours": 10,
+      "id": 26
+    },
+    "course_028": {
+      "name": "DevOps エンジニア養成",
+      "prerequisites": [
+        "aws_professional",
+        "docker_professional",
+        "git_professional"
+      ],
+      "skills_acquired": [
+        "devops_professional",
+        "monitoring_professional"
+      ],
+      "description": "開発と運用を統合する実践的スキル",
+      "estimated_hours": 10,
+      "id": 27
+    },
+    "course_029": {
+      "name": "UI/UXデザイン基礎",
+      "prerequisites": [],
+      "skills_acquired": [
+        "design_foundation",
+        "figma_professional"
+      ],
+      "description": "ユーザー中心設計の基本原理",
+      "estimated_hours": 10,
+      "id": 28
+    },
+    "course_030": {
+      "name": "UI/UXデザイン実践",
+      "prerequisites": [
+        "design_foundation",
+        "html_css_professional"
+      ],
+      "skills_acquired": [
+        "ui_ux_professional",
+        "prototyping_professional"
+      ],
+      "description": "実際のプロダクト開発でのUXデザイン",
+      "id": 29,
+      "estimated_hours": 10
+    },
+    "course_031": {
+      "name": "デザインシステム構築",
+      "prerequisites": [
+        "ui_ux_professional",
+        "figma_professional"
+      ],
+      "skills_acquired": [
+        "ui_ux_expert"
+      ],
+      "description": "一貫性のあるデザイン管理システム",
+      "id": 30,
+      "estimated_hours": 10
+    },
+    "course_032": {
+      "name": "ユーザーリサーチ・データドリブンデザイン",
+      "prerequisites": [
+        "ui_ux_professional"
+      ],
+      "skills_acquired": [
+        "user_research_professional"
+      ],
+      "description": "データに基づくデザイン意思決定",
+      "id": 31,
+      "estimated_hours": 10
+    },
+    "course_033": {
+      "name": "Adobe Creative Suite マスター",
+      "prerequisites": [
+        "design_foundation"
+      ],
+      "skills_acquired": [
+        "photoshop_professional",
+        "illustrator_professional",
+        "adobe_xd_professional"
+      ],
+      "description": "プロ仕様デザインツールの習得",
+      "id": 32,
+      "estimated_hours": 10
+    },
+    "course_034": {
+      "name": "統計学・データ分析基礎",
+      "prerequisites": [],
+      "skills_acquired": [
+        "statistics_foundation",
+        "excel_expert"
+      ],
+      "description": "データ分析の数学的基礎",
+      "id": 33,
+      "estimated_hours": 10
+    },
+    "course_035": {
+      "name": "Pythonデータサイエンス",
+      "prerequisites": [
+        "python_professional",
+        "statistics_foundation"
+      ],
+      "skills_acquired": [
+        "python_data_science",
+        "data_analysis_professional"
+      ],
+      "description": "Pythonによる本格的データ分析",
+      "id": 34,
+      "estimated_hours": 10
+    },
+    "course_036": {
+      "name": "機械学習エンジニア養成",
+      "prerequisites": [
+        "python_data_science",
+        "statistics_professional"
+      ],
+      "skills_acquired": [
+        "machine_learning_professional"
+      ],
+      "description": "AIシステムの開発と運用",
+      "id": 35,
+      "estimated_hours": 10
+    },
+    "course_037": {
+      "name": "ディープラーニング実践",
+      "prerequisites": [
+        "machine_learning_professional"
+      ],
+      "skills_acquired": [
+        "deep_learning_professional"
+      ],
+      "description": "深層学習による高度なAI開発",
+      "id": 36,
+      "estimated_hours": 10
+    },
+    "course_038": {
+      "name": "ビジネスインテリジェンス・BI",
+      "prerequisites": [
+        "sql_professional",
+        "excel_expert"
+      ],
+      "skills_acquired": [
+        "tableau_professional",
+        "power_bi_professional"
+      ],
+      "description": "ビジネスデータの可視化と分析",
+      "id": 37,
+      "estimated_hours": 10
+    },
+    "course_039": {
+      "name": "ビッグデータ処理",
+      "prerequisites": [
+        "python_data_science",
+        "sql_expert"
+      ],
+      "skills_acquired": [
+        "big_data_professional"
+      ],
+      "description": "大規模データの処理と分析",
+      "id": 38,
+      "estimated_hours": 10
+    },
+    "course_040": {
+      "name": "iOS Swift アプリ開発",
+      "prerequisites": [
+        "ui_ux_professional"
+      ],
+      "skills_acquired": [
+        "ios_swift_professional",
+        "mobile_ui_professional"
+      ],
+      "description": "iPhone・iPadアプリの開発",
+      "id": 39,
+      "estimated_hours": 10
+    },
+    "course_041": {
+      "name": "Android Kotlin アプリ開発",
+      "prerequisites": [
+        "java_foundation",
+        "ui_ux_professional"
+      ],
+      "skills_acquired": [
+        "android_kotlin_professional",
+        "mobile_ui_professional"
+      ],
+      "description": "Androidアプリの開発",
+      "id": 40,
+      "estimated_hours": 10
+    },
+    "course_042": {
+      "name": "React Native クロスプラットフォーム開発",
+      "prerequisites": [
+        "react_professional",
+        "mobile_ui_professional"
+      ],
+      "skills_acquired": [
+        "react_native_professional"
+      ],
+      "description": "iOS・Android同時対応アプリ開発",
+      "id": 41,
+      "estimated_hours": 10
+    },
+    "course_043": {
+      "name": "Flutter クロスプラットフォーム開発",
+      "prerequisites": [
+        "ui_ux_professional"
+      ],
+      "skills_acquired": [
+        "flutter_professional",
+        "mobile_ui_professional"
+      ],
+      "description": "Googleのクロスプラットフォーム技術",
+      "id": 42,
+      "estimated_hours": 10
+    },
+    "course_044": {
+      "name": "要件定義・ビジネス分析",
+      "prerequisites": [
+        "it_fundamentals",
+        "project_management_professional"
+      ],
+      "skills_acquired": [
+        "requirements_analysis_professional",
+        "business_analysis"
+      ],
+      "description": "システム開発の上流工程",
+      "id": 43,
+      "estimated_hours": 10
+    },
+    "course_045": {
+      "name": "システム設計・アーキテクチャ",
+      "prerequisites": [
+        "sql_expert",
+        "api_design_professional"
+      ],
+      "skills_acquired": [
+        "system_design_professional",
+        "architecture_design_expert"
+      ],
+      "description": "スケーラブルなシステム設計",
+      "id": 44,
+      "estimated_hours": 10
+    },
+    "course_046": {
+      "name": "マイクロサービス アーキテクチャ",
+      "prerequisites": [
+        "architecture_design_expert",
+        "docker_professional",
+        "api_design_professional"
+      ],
+      "skills_acquired": [
+        "microservices_expert"
+      ],
+      "description": "分散システム設計の最先端技術",
+      "id": 45,
+      "estimated_hours": 10
+    },
+    "course_047": {
+      "name": "API設計・RESTful開発",
+      "prerequisites": [
+        "sql_professional",
+        "javascript_professional"
+      ],
+      "skills_acquired": [
+        "api_design_professional"
+      ],
+      "description": "システム間連携の設計と実装",
+      "id": 46,
+      "estimated_hours": 10
+    },
+    "course_048": {
+      "name": "ITプロジェクト管理",
+      "prerequisites": [
+        "it_fundamentals"
+      ],
+      "skills_acquired": [
+        "project_management_professional"
+      ],
+      "description": "プロジェクトの計画・実行・管理",
+      "id": 47,
+      "estimated_hours": 10
+    },
+    "course_049": {
+      "name": "アジャイル・スクラム実践",
+      "prerequisites": [
+        "project_management_professional"
+      ],
+      "skills_acquired": [
+        "agile_scrum_professional"
+      ],
+      "description": "迅速で柔軟な開発手法",
+      "id": 48,
+      "estimated_hours": 10
+    },
+    "course_050": {
+      "name": "テックリード・チームマネジメント",
+      "prerequisites": [
+        "project_management_professional",
+        "system_design_professional"
+      ],
+      "skills_acquired": [
+        "team_leadership"
+      ],
+      "description": "技術チームのリーダーシップ",
+      "id": 49,
+      "estimated_hours": 10
+    },
+    "course_051": {
+      "name": "テスト自動化・品質保証",
+      "prerequisites": [
+        "javascript_professional",
+        "python_professional"
+      ],
+      "skills_acquired": [
+        "test_automation_professional",
+        "quality_assurance_professional"
+      ],
+      "description": "システム品質の確保と自動化",
+      "id": 50,
+      "estimated_hours": 10
+    },
+    "course_052": {
+      "name": "パフォーマンス最適化",
+      "prerequisites": [
+        "sql_expert",
+        "linux_professional"
+      ],
+      "skills_acquired": [
+        "performance_tuning_expert"
+      ],
+      "description": "システム性能の分析と改善",
+      "id": 51,
+      "estimated_hours": 10
+    },
+    "course_053": {
+      "name": "情報セキュリティ実践",
+      "prerequisites": [
+        "network_professional",
+        "linux_professional"
+      ],
+      "skills_acquired": [
+        "security_professional"
+      ],
+      "description": "セキュアなシステム構築と運用",
+      "id": 52,
+      "estimated_hours": 10
+    },
+    "course_054": {
+      "name": "プロダクトマネジメント",
+      "prerequisites": [
+        "business_analysis",
+        "ui_ux_professional"
+      ],
+      "skills_acquired": [
+        "product_management"
+      ],
+      "description": "プロダクトの企画から成長まで",
+      "id": 53,
+      "estimated_hours": 10
+    },
+    "course_055": {
+      "name": "デジタルトランスフォーメーション",
+      "prerequisites": [
+        "business_analysis",
+        "architecture_design_expert"
+      ],
+      "skills_acquired": [
+        "digital_transformation"
+      ],
+      "description": "企業のデジタル変革推進",
+      "id": 54,
+      "estimated_hours": 10
+    },
+    "course_056": {
+      "name": "スタートアップ開発・MVP構築",
+      "prerequisites": [
+        "react_professional",
+        "api_design_professional",
+        "aws_professional"
+      ],
+      "skills_acquired": [
+        "startup_development"
+      ],
+      "description": "迅速なプロダクト開発と検証",
+      "id": 55,
+      "estimated_hours": 10
+    },
+    "course_057": {
+      "name": "フルスタックWeb開発プロジェクト",
+      "prerequisites": [
+        "react_professional",
+        "node_js_professional",
+        "sql_professional",
+        "aws_foundation"
+      ],
+      "skills_acquired": [
+        "next_js_professional",
+        "devops_professional"
+      ],
+      "description": "本格的なWebアプリケーション開発",
+      "id": 56,
+      "estimated_hours": 10
+    },
+    "course_058": {
+      "name": "Eコマースサイト構築プロジェクト",
+      "prerequisites": [
+        "django_professional",
+        "react_professional",
+        "sql_expert",
+        "aws_professional"
+      ],
+      "skills_acquired": [
+        "system_design_professional",
+        "performance_tuning_expert"
+      ],
+      "description": "大規模ECサイトの設計と実装",
+      "id": 57,
+      "estimated_hours": 10
+    },
+    "course_059": {
+      "name": "SaaS開発プロジェクト",
+      "prerequisites": [
+        "microservices_expert",
+        "react_expert",
+        "aws_expert",
+        "devops_professional"
+      ],
+      "skills_acquired": [
+        "architecture_design_expert",
+        "product_management"
+      ],
+      "description": "クラウドネイティブSaaSの開発",
+      "id": 58,
+      "estimated_hours": 10
+    },
+    "course_060": {
+      "name": "AIアプリケーション開発プロジェクト",
+      "prerequisites": [
+        "machine_learning_professional",
+        "react_professional",
+        "api_design_professional"
+      ],
+      "skills_acquired": [
+        "deep_learning_professional",
+        "python_expert"
+      ],
+      "description": "機械学習を活用したアプリ開発",
+      "id": 59,
+      "estimated_hours": 10
+    }
+  }
+}

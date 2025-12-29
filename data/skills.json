@@ -1,0 +1,524 @@
+{
+  "skills_master": {
+    "html_css_foundation": {
+      "name": "HTML/CSS基礎",
+      "category": "Web基礎",
+      "id": 0
+    },
+    "html_css_professional": {
+      "name": "HTML/CSS実務",
+      "category": "Web基礎",
+      "id": 1
+    },
+    "html_css_expert": {
+      "name": "HTML/CSS上級",
+      "category": "Web基礎",
+      "id": 2
+    },
+    "javascript_foundation": {
+      "name": "JavaScript基礎",
+      "category": "プログラミング",
+      "id": 3
+    },
+    "javascript_professional": {
+      "name": "JavaScript実務",
+      "category": "プログラミング",
+      "id": 4
+    },
+    "javascript_expert": {
+      "name": "JavaScript上級",
+      "category": "プログラミング",
+      "id": 5
+    },
+    "typescript_professional": {
+      "name": "TypeScript実務",
+      "category": "プログラミング",
+      "id": 6
+    },
+    "react_professional": {
+      "name": "React実務",
+      "category": "フレームワーク",
+      "id": 7
+    },
+    "react_expert": {
+      "name": "React上級",
+      "category": "フレームワーク",
+      "id": 8
+    },
+    "vue_professional": {
+      "name": "Vue.js実務",
+      "category": "フレームワーク",
+      "id": 9
+    },
+    "angular_professional": {
+      "name": "Angular実務",
+      "category": "フレームワーク",
+      "id": 10
+    },
+    "next_js_professional": {
+      "name": "Next.js実務",
+      "category": "フレームワーク",
+      "id": 11
+    },
+    "webpack_professional": {
+      "name": "Webpack実務",
+      "category": "ビルドツール",
+      "id": 12
+    },
+    "sass_professional": {
+      "name": "Sass実務",
+      "category": "CSS技術",
+      "id": 13
+    },
+    "python_foundation": {
+      "name": "Python基礎",
+      "category": "プログラミング",
+      "id": 14
+    },
+    "python_professional": {
+      "name": "Python実務",
+      "category": "プログラミング",
+      "id": 15
+    },
+    "python_expert": {
+      "name": "Python上級",
+      "category": "プログラミング",
+      "id": 16
+    },
+    "django_professional": {
+      "name": "Django実務",
+      "category": "フレームワーク",
+      "id": 17
+    },
+    "flask_professional": {
+      "name": "Flask実務",
+      "category": "フレームワーク",
+      "id": 18
+    },
+    "fastapi_professional": {
+      "name": "FastAPI実務",
+      "category": "フレームワーク",
+      "id": 19
+    },
+    "java_foundation": {
+      "name": "Java基礎",
+      "category": "プログラミング",
+      "id": 20
+    },
+    "java_professional": {
+      "name": "Java実務",
+      "category": "プログラミング",
+      "id": 21
+    },
+    "spring_professional": {
+      "name": "Spring実務",
+      "category": "フレームワーク",
+      "id": 22
+    },
+    "spring_boot_professional": {
+      "name": "Spring Boot実務",
+      "category": "フレームワーク",
+      "id": 23
+    },
+    "node_js_professional": {
+      "name": "Node.js実務",
+      "category": "プログラミング",
+      "id": 24
+    },
+    "express_professional": {
+      "name": "Express実務",
+      "category": "フレームワーク",
+      "id": 25
+    },
+    "php_professional": {
+      "name": "PHP実務",
+      "category": "プログラミング",
+      "id": 26
+    },
+    "laravel_professional": {
+      "name": "Laravel実務",
+      "category": "フレームワーク",
+      "id": 27
+    },
+    "go_professional": {
+      "name": "Go実務",
+      "category": "プログラミング",
+      "id": 28
+    },
+    "rust_professional": {
+      "name": "Rust実務",
+      "category": "プログラミング",
+      "id": 29
+    },
+    "sql_foundation": {
+      "name": "SQL基礎",
+      "category": "データベース",
+      "id": 30
+    },
+    "sql_professional": {
+      "name": "SQL実務",
+      "category": "データベース",
+      "id": 31
+    },
+    "sql_expert": {
+      "name": "SQL上級",
+      "category": "データベース",
+      "id": 32
+    },
+    "mysql_professional": {
+      "name": "MySQL実務",
+      "category": "データベース",
+      "id": 33
+    },
+    "postgresql_professional": {
+      "name": "PostgreSQL実務",
+      "category": "データベース",
+      "id": 34
+    },
+    "mongodb_professional": {
+      "name": "MongoDB実務",
+      "category": "NoSQL",
+      "id": 35
+    },
+    "redis_professional": {
+      "name": "Redis実務",
+      "category": "NoSQL",
+      "id": 36
+    },
+    "elasticsearch_professional": {
+      "name": "Elasticsearch実務",
+      "category": "検索エンジン",
+      "id": 37
+    },
+    "database_design_expert": {
+      "name": "データベース設計上級",
+      "category": "設計",
+      "id": 38
+    },
+    "aws_foundation": {
+      "name": "AWS基礎",
+      "category": "クラウド",
+      "id": 39
+    },
+    "aws_professional": {
+      "name": "AWS実務",
+      "category": "クラウド",
+      "id": 40
+    },
+    "aws_expert": {
+      "name": "AWS上級",
+      "category": "クラウド",
+      "id": 41
+    },
+    "azure_professional": {
+      "name": "Azure実務",
+      "category": "クラウド",
+      "id": 42
+    },
+    "gcp_professional": {
+      "name": "GCP実務",
+      "category": "クラウド",
+      "id": 43
+    },
+    "docker_professional": {
+      "name": "Docker実務",
+      "category": "コンテナ",
+      "id": 44
+    },
+    "kubernetes_professional": {
+      "name": "Kubernetes実務",
+      "category": "コンテナ",
+      "id": 45
+    },
+    "terraform_professional": {
+      "name": "Terraform実務",
+      "category": "IaC",
+      "id": 46
+    },
+    "ansible_professional": {
+      "name": "Ansible実務",
+      "category": "構成管理",
+      "id": 47
+    },
+    "linux_foundation": {
+      "name": "Linux基礎",
+      "category": "OS",
+      "id": 48
+    },
+    "linux_professional": {
+      "name": "Linux実務",
+      "category": "OS",
+      "id": 49
+    },
+    "network_professional": {
+      "name": "ネットワーク実務",
+      "category": "インフラ",
+      "id": 50
+    },
+    "security_professional": {
+      "name": "セキュリティ実務",
+      "category": "セキュリティ",
+      "id": 51
+    },
+    "git_foundation": {
+      "name": "Git基礎",
+      "category": "バージョン管理",
+      "id": 52
+    },
+    "git_professional": {
+      "name": "Git実務",
+      "category": "バージョン管理",
+      "id": 53
+    },
+    "github_actions_professional": {
+      "name": "GitHub Actions実務",
+      "category": "CI/CD",
+      "id": 54
+    },
+    "jenkins_professional": {
+      "name": "Jenkins実務",
+      "category": "CI/CD",
+      "id": 55
+    },
+    "devops_professional": {
+      "name": "DevOps実務",
+      "category": "DevOps",
+      "id": 56
+    },
+    "monitoring_professional": {
+      "name": "監視・ログ管理",
+      "category": "運用",
+      "id": 57
+    },
+    "design_foundation": {
+      "name": "デザイン基礎",
+      "category": "デザイン",
+      "id": 58
+    },
+    "ui_ux_professional": {
+      "name": "UI/UX実務",
+      "category": "デザイン",
+      "id": 59
+    },
+    "ui_ux_expert": {
+      "name": "UI/UX上級",
+      "category": "デザイン",
+      "id": 60
+    },
+    "photoshop_professional": {
+      "name": "Photoshop実務",
+      "category": "デザインツール",
+      "id": 61
+    },
+    "illustrator_professional": {
+      "name": "Illustrator実務",
+      "category": "デザインツール",
+      "id": 62
+    },
+    "figma_professional": {
+      "name": "Figma実務",
+      "category": "デザインツール",
+      "id": 63
+    },
+    "sketch_professional": {
+      "name": "Sketch実務",
+      "category": "デザインツール",
+      "id": 64
+    },
+    "adobe_xd_professional": {
+      "name": "Adobe XD実務",
+      "category": "デザインツール",
+      "id": 65
+    },
+    "user_research_professional": {
+      "name": "ユーザーリサーチ実務",
+      "category": "UX調査",
+      "id": 66
+    },
+    "prototyping_professional": {
+      "name": "プロトタイピング実務",
+      "category": "デザイン",
+      "id": 67
+    },
+    "statistics_foundation": {
+      "name": "統計学基礎",
+      "category": "統計",
+      "id": 68
+    },
+    "statistics_professional": {
+      "name": "統計学実務",
+      "category": "統計",
+      "id": 69
+    },
+    "data_analysis_professional": {
+      "name": "データ分析実務",
+      "category": "データ分析",
+      "id": 70
+    },
+    "machine_learning_professional": {
+      "name": "機械学習実務",
+      "category": "AI",
+      "id": 71
+    },
+    "deep_learning_professional": {
+      "name": "ディープラーニング実務",
+      "category": "AI",
+      "id": 72
+    },
+    "python_data_science": {
+      "name": "Pythonデータサイエンス",
+      "category": "データ分析",
+      "id": 73
+    },
+    "r_professional": {
+      "name": "R実務",
+      "category": "統計",
+      "id": 74
+    },
+    "tableau_professional": {
+      "name": "Tableau実務",
+      "category": "BI",
+      "id": 75
+    },
+    "power_bi_professional": {
+      "name": "Power BI実務",
+      "category": "BI",
+      "id": 76
+    },
+    "excel_expert": {
+      "name": "Excel上級",
+      "category": "データ分析",
+      "id": 77
+    },
+    "big_data_professional": {
+      "name": "ビッグデータ処理",
+      "category": "データ分析",
+      "id": 78
+    },
+    "ios_swift_professional": {
+      "name": "iOS Swift実務",
+      "category": "モバイル",
+      "id": 79
+    },
+    "android_kotlin_professional": {
+      "name": "Android Kotlin実務",
+      "category": "モバイル",
+      "id": 80
+    },
+    "react_native_professional": {
+      "name": "React Native実務",
+      "category": "モバイル",
+      "id": 81
+    },
+    "flutter_professional": {
+      "name": "Flutter実務",
+      "category": "モバイル",
+      "id": 82
+    },
+    "mobile_ui_professional": {
+      "name": "モバイルUI実務",
+      "category": "モバイル",
+      "id": 83
+    },
+    "requirements_analysis_professional": {
+      "name": "要件定義実務",
+      "category": "上流工程",
+      "id": 84
+    },
+    "system_design_professional": {
+      "name": "システム設計実務",
+      "category": "上流工程",
+      "id": 85
+    },
+    "architecture_design_expert": {
+      "name": "アーキテクチャ設計上級",
+      "category": "上流工程",
+      "id": 86
+    },
+    "api_design_professional": {
+      "name": "API設計実務",
+      "category": "設計",
+      "id": 87
+    },
+    "microservices_expert": {
+      "name": "マイクロサービス上級",
+      "category": "アーキテクチャ",
+      "id": 88
+    },
+    "project_management_professional": {
+      "name": "プロジェクト管理実務",
+      "category": "マネジメント",
+      "id": 89
+    },
+    "agile_scrum_professional": {
+      "name": "アジャイル・スクラム実務",
+      "category": "開発手法",
+      "id": 90
+    },
+    "team_leadership": {
+      "name": "チームリーダーシップ",
+      "category": "マネジメント",
+      "id": 91
+    },
+    "test_automation_professional": {
+      "name": "テスト自動化実務",
+      "category": "テスト",
+      "id": 92
+    },
+    "quality_assurance_professional": {
+      "name": "品質保証実務",
+      "category": "品質管理",
+      "id": 93
+    },
+    "performance_tuning_expert": {
+      "name": "パフォーマンスチューニング上級",
+      "category": "最適化",
+      "id": 94
+    },
+    "it_fundamentals": {
+      "name": "IT基礎知識",
+      "category": "IT基礎",
+      "id": 95
+    },
+    "computer_science_fundamentals": {
+      "name": "コンピュータサイエンス基礎",
+      "category": "CS基礎",
+      "id": 96
+    },
+    "algorithm_data_structure": {
+      "name": "アルゴリズム・データ構造",
+      "category": "CS基礎",
+      "id": 97
+    },
+    "software_engineering": {
+      "name": "ソフトウェア工学",
+      "category": "工学",
+      "id": 98
+    },
+    "information_security_fundamentals": {
+      "name": "情報セキュリティ基礎",
+      "category": "セキュリティ",
+      "id": 99
+    },
+    "business_analysis": {
+      "name": "ビジネス分析",
+      "category": "ビジネス",
+      "id": 100
+    },
+    "digital_transformation": {
+      "name": "デジタルトランスフォーメーション",
+      "category": "ビジネス",
+      "id": 101
+    },
+    "product_management": {
+      "name": "プロダクトマネジメント",
+      "category": "プロダクト",
+      "id": 102
+    },
+    "startup_development": {
+      "name": "スタートアップ開発",
+      "category": "起業",
+      "id": 103
+    }
+  }
+}

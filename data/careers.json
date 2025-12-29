@@ -1,0 +1,249 @@
+{
+  "career_goals": {
+    "Webデザイナー": {
+      "required_skills": [
+        "html_css_professional",
+        "javascript_professional",
+        "figma_professional",
+        "ui_ux_professional",
+        "photoshop_professional",
+        "prototyping_professional"
+      ],
+      "description": "Webサイトのデザインと実装を行う専門職",
+      "id": 0
+    },
+    "フロントエンドエンジニア": {
+      "required_skills": [
+        "html_css_professional",
+        "javascript_professional",
+        "typescript_professional",
+        "react_professional",
+        "sass_professional",
+        "git_professional",
+        "webpack_professional"
+      ],
+      "description": "ユーザーインターフェースの開発専門",
+      "id": 1
+    },
+    "上級フロントエンドエンジニア": {
+      "required_skills": [
+        "react_expert",
+        "typescript_professional",
+        "next_js_professional",
+        "performance_tuning_expert",
+        "test_automation_professional",
+        "ui_ux_professional"
+      ],
+      "description": "フロントエンド領域のエキスパート",
+      "id": 2
+    },
+    "バックエンドエンジニア": {
+      "required_skills": [
+        "python_professional",
+        "django_professional",
+        "sql_professional",
+        "api_design_professional",
+        "linux_professional",
+        "aws_professional",
+        "git_professional"
+      ],
+      "description": "サーバーサイドの開発専門",
+      "id": 3
+    },
+    "フルスタックエンジニア": {
+      "required_skills": [
+        "react_professional",
+        "node_js_professional",
+        "sql_professional",
+        "aws_professional",
+        "api_design_professional",
+        "devops_professional",
+        "git_professional"
+      ],
+      "description": "フロントエンドからバックエンドまで対応",
+      "id": 4
+    },
+    "データサイエンティスト": {
+      "required_skills": [
+        "python_data_science",
+        "statistics_professional",
+        "machine_learning_professional",
+        "sql_expert",
+        "tableau_professional",
+        "big_data_professional"
+      ],
+      "description": "データから価値を創出する専門職",
+      "id": 5
+    },
+    "機械学習エンジニア": {
+      "required_skills": [
+        "python_expert",
+        "machine_learning_professional",
+        "deep_learning_professional",
+        "aws_professional",
+        "docker_professional",
+        "api_design_professional"
+      ],
+      "description": "AIシステムの開発と運用専門",
+      "id": 6
+    },
+    "クラウドエンジニア": {
+      "required_skills": [
+        "aws_expert",
+        "docker_professional",
+        "kubernetes_professional",
+        "terraform_professional",
+        "linux_professional",
+        "network_professional",
+        "security_professional"
+      ],
+      "description": "クラウドインフラの設計・構築・運用",
+      "id": 7
+    },
+    "DevOpsエンジニア": {
+      "required_skills": [
+        "aws_professional",
+        "docker_professional",
+        "kubernetes_professional",
+        "devops_professional",
+        "monitoring_professional",
+        "git_professional",
+        "terraform_professional"
+      ],
+      "description": "開発と運用を統合する専門職",
+      "id": 8
+    },
+    "システムアーキテクト": {
+      "required_skills": [
+        "system_design_professional",
+        "architecture_design_expert",
+        "microservices_expert",
+        "sql_expert",
+        "aws_expert",
+        "security_professional",
+        "performance_tuning_expert"
+      ],
+      "description": "大規模システムの設計責任者",
+      "id": 9
+    },
+    "プロジェクトマネージャー": {
+      "required_skills": [
+        "project_management_professional",
+        "agile_scrum_professional",
+        "team_leadership",
+        "requirements_analysis_professional",
+        "business_analysis",
+        "it_fundamentals"
+      ],
+      "description": "ITプロジェクト全体の管理責任者",
+      "id": 10
+    },
+    "プロダクトマネージャー": {
+      "required_skills": [
+        "product_management",
+        "ui_ux_professional",
+        "business_analysis",
+        "data_analysis_professional",
+        "agile_scrum_professional",
+        "api_design_professional"
+      ],
+      "description": "プロダクト戦略と開発を統括",
+      "id": 11
+    },
+    "UI/UXデザイナー": {
+      "required_skills": [
+        "ui_ux_expert",
+        "figma_professional",
+        "user_research_professional",
+        "prototyping_professional",
+        "html_css_professional",
+        "javascript_foundation"
+      ],
+      "description": "ユーザー体験設計の専門家",
+      "id": 12
+    },
+    "iOSアプリ開発者": {
+      "required_skills": [
+        "ios_swift_professional",
+        "mobile_ui_professional",
+        "api_design_professional",
+        "git_professional",
+        "ui_ux_professional"
+      ],
+      "description": "iPhone・iPadアプリの開発専門",
+      "id": 13
+    },
+    "Androidアプリ開発者": {
+      "required_skills": [
+        "android_kotlin_professional",
+        "mobile_ui_professional",
+        "api_design_professional",
+        "git_professional",
+        "ui_ux_professional"
+      ],
+      "description": "Androidアプリの開発専門",
+      "id": 14
+    },
+    "モバイルアプリ開発者": {
+      "required_skills": [
+        "react_native_professional",
+        "mobile_ui_professional",
+        "api_design_professional",
+        "git_professional",
+        "ui_ux_professional",
+        "react_professional"
+      ],
+      "description": "クロスプラットフォームアプリ開発",
+      "id": 15
+    },
+    "セキュリティエンジニア": {
+      "required_skills": [
+        "security_professional",
+        "network_professional",
+        "linux_professional",
+        "aws_professional",
+        "information_security_fundamentals",
+        "monitoring_professional"
+      ],
+      "description": "システムセキュリティの専門家",
+      "id": 16
+    },
+    "データエンジニア": {
+      "required_skills": [
+        "python_professional",
+        "sql_expert",
+        "big_data_professional",
+        "aws_professional",
+        "docker_professional",
+        "api_design_professional"
+      ],
+      "description": "データ基盤の構築と運用専門",
+      "id": 17
+    },
+    "ITコンサルタント": {
+      "required_skills": [
+        "business_analysis",
+        "digital_transformation",
+        "system_design_professional",
+        "project_management_professional",
+        "requirements_analysis_professional",
+        "it_fundamentals"
+      ],
+      "description": "IT戦略とソリューション提案の専門家",
+      "id": 18
+    },
+    "スタートアップCTO": {
+      "required_skills": [
+        "architecture_design_expert",
+        "team_leadership",
+        "product_management",
+        "startup_development",
+        "aws_expert",
+        "agile_scrum_professional",
+        "business_analysis"
+      ],
+      "description": "スタートアップの技術責任者",
+      "id": 19
+    }
+  }
+}

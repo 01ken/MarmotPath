@@ -1,0 +1,334 @@
+{
+  "course_combinations": {
+    "combination_001": {
+      "courses": ["course_003", "course_004"],
+      "combination_name": "Web基礎完全セット",
+      "synergy_effect": 5,
+      "description": "HTML/CSSとJavaScriptは現代のWeb開発の必須基盤技術",
+      "benefits": [
+        "統合的なフロントエンド基礎理解",
+        "動的サイト制作の完全習得",
+        "実務で即戦力となる技術セット"
+      ]
+    },
+    "combination_002": {
+      "courses": ["course_006", "course_005"],
+      "combination_name": "React + TypeScript実践セット",
+      "synergy_effect": 5,
+      "description": "モダンフロントエンド開発の黄金コンビ",
+      "benefits": [
+        "型安全なReact開発の習得",
+        "大規模アプリケーション開発対応",
+        "エンタープライズ級開発スキル"
+      ]
+    },
+    "combination_003": {
+      "courses": ["course_011", "course_018"],
+      "combination_name": "Python + SQL基礎セット",
+      "synergy_effect": 4,
+      "description": "データ操作とプログラミングの基盤技術",
+      "benefits": [
+        "データドリブンなアプリケーション開発",
+        "Web開発とデータ分析の両対応",
+        "バックエンド開発の基礎固め"
+      ]
+    },
+    "combination_004": {
+      "courses": ["course_029", "course_030"],
+      "combination_name": "UI/UXデザイン基礎から実践",
+      "synergy_effect": 5,
+      "description": "ユーザー中心設計の理論から実践まで",
+      "benefits": [
+        "デザイン思考の体系的習得",
+        "プロトタイプからプロダクトまでの一貫した理解",
+        "実務レベルのデザインスキル"
+      ]
+    },
+    "combination_005": {
+      "courses": ["course_025", "course_021"],
+      "combination_name": "Linux + AWS基盤セット",
+      "synergy_effect": 4,
+      "description": "サーバー管理からクラウド運用まで",
+      "benefits": [
+        "インフラ運用の包括的理解",
+        "オンプレミスとクラウドの両対応",
+        "DevOpsエンジニアへの基盤構築"
+      ]
+    },
+    "combination_006": {
+      "courses": ["course_026", "course_023"],
+      "combination_name": "Git + Docker開発環境セット",
+      "synergy_effect": 4,
+      "description": "モダン開発環境の必須ツール",
+      "benefits": [
+        "チーム開発の効率化",
+        "一貫した開発環境の構築",
+        "CI/CDパイプライン構築の基盤"
+      ]
+    },
+    "combination_007": {
+      "courses": ["course_034", "course_035"],
+      "combination_name": "統計学 + Pythonデータサイエンス",
+      "synergy_effect": 5,
+      "description": "データサイエンスの理論と実践",
+      "benefits": [
+        "データ分析の数学的基盤の理解",
+        "統計理論の実装スキル習得",
+        "科学的根拠に基づく分析手法"
+      ]
+    },
+    "combination_008": {
+      "courses": ["course_012", "course_019"],
+      "combination_name": "Django + データベース設計",
+      "synergy_effect": 4,
+      "description": "Webアプリケーション開発の核心技術",
+      "benefits": [
+        "スケーラブルなWeb開発",
+        "効率的なデータ設計",
+        "パフォーマンスを考慮した実装"
+      ]
+    },
+    "combination_009": {
+      "courses": ["course_006", "course_016"],
+      "combination_name": "React + Node.js フルスタック",
+      "synergy_effect": 4,
+      "description": "JavaScript一本でのフルスタック開発",
+      "benefits": [
+        "統一言語でのフルスタック開発",
+        "開発効率の大幅向上",
+        "モダンWebアプリケーションの完全理解"
+      ]
+    },
+    "combination_010": {
+      "courses": ["course_001", "course_048"],
+      "combination_name": "IT基礎知識 + プロジェクト管理",
+      "synergy_effect": 3,
+      "description": "ITマネジメントの基盤スキル",
+      "benefits": [
+        "技術とマネジメントの両面理解",
+        "プロジェクトリーダーとしての素地",
+        "IT業界での幅広い活躍可能性"
+      ]
+    },
+    "combination_011": {
+      "courses": ["course_022", "course_024"],
+      "combination_name": "AWS上級 + インフラ自動化",
+      "synergy_effect": 5,
+      "description": "クラウドアーキテクトの必須スキル",
+      "benefits": [
+        "エンタープライズクラウド設計",
+        "大規模インフラの自動管理",
+        "コスト効率の高いシステム運用"
+      ]
+    },
+    "combination_012": {
+      "courses": ["course_030", "course_003"],
+      "combination_name": "UI/UXデザイン + HTML/CSS",
+      "synergy_effect": 4,
+      "description": "デザインから実装まで一貫したスキル",
+      "benefits": [
+        "デザイン意図を正確に実装",
+        "デザイナーと開発者の橋渡し",
+        "ユーザビリティの高いサイト制作"
+      ]
+    },
+    "combination_013": {
+      "courses": ["course_035", "course_036"],
+      "combination_name": "データサイエンス + 機械学習",
+      "synergy_effect": 5,
+      "description": "AI/データサイエンティストの核心スキル",
+      "benefits": [
+        "データ分析からAI開発まで一貫対応",
+        "高度な予測モデル構築",
+        "ビジネス価値の高いAIソリューション"
+      ]
+    },
+    "combination_014": {
+      "courses": ["course_040", "course_030"],
+      "combination_name": "iOS開発 + UI/UXデザイン",
+      "synergy_effect": 4,
+      "description": "ユーザー体験重視のモバイルアプリ開発",
+      "benefits": [
+        "App Storeで評価される高品質アプリ",
+        "ユーザビリティを考慮した設計",
+        "デザインから開発まで一人で完結"
+      ]
+    },
+    "combination_015": {
+      "courses": ["course_027", "course_028"],
+      "combination_name": "CI/CD + DevOps統合",
+      "synergy_effect": 5,
+      "description": "自動化されたソフトウェアデリバリー",
+      "benefits": [
+        "開発から運用まで完全自動化",
+        "品質と速度の両立",
+        "現代的なソフトウェア開発プロセス"
+      ]
+    },
+    "combination_016": {
+      "courses": ["course_014", "course_015"],
+      "combination_name": "Java + Spring Boot企業開発",
+      "synergy_effect": 4,
+      "description": "エンタープライズJava開発の定番構成",
+      "benefits": [
+        "大規模企業システム対応",
+        "保守性の高いアプリケーション開発",
+        "Java生態系の完全活用"
+      ]
+    },
+    "combination_017": {
+      "courses": ["course_033", "course_031"],
+      "combination_name": "Adobe Creative + デザインシステム",
+      "synergy_effect": 3,
+      "description": "プロデザイナーの実践スキル",
+      "benefits": [
+        "一貫性のあるブランドデザイン",
+        "効率的なデザインワークフロー",
+        "企業レベルのデザイン管理"
+      ]
+    },
+    "combination_018": {
+      "courses": ["course_038", "course_039"],
+      "combination_name": "BI + ビッグデータ分析",
+      "synergy_effect": 4,
+      "description": "企業データ活用の包括的スキル",
+      "benefits": [
+        "小規模から大規模データまで対応",
+        "経営判断を支える分析力",
+        "データドリブン経営の推進"
+      ]
+    },
+    "combination_019": {
+      "courses": ["course_044", "course_045"],
+      "combination_name": "要件定義 + システム設計",
+      "synergy_effect": 5,
+      "description": "システム開発上流工程の核心スキル",
+      "benefits": [
+        "顧客要求からシステム設計まで一貫対応",
+        "プロジェクト成功率の向上",
+        "システムアーキテクトへの道筋"
+      ]
+    },
+    "combination_020": {
+      "courses": ["course_049", "course_050"],
+      "combination_name": "アジャイル + チームリーダーシップ",
+      "synergy_effect": 4,
+      "description": "モダン開発チームのマネジメント",
+      "benefits": [
+        "高生産性チームの構築",
+        "変化に対応できる開発組織",
+        "技術リーダーとしての成長"
+      ]
+    },
+    "combination_021": {
+      "courses": ["course_042", "course_006"],
+      "combination_name": "React Native + React基盤",
+      "synergy_effect": 4,
+      "description": "React生態系の完全活用",
+      "benefits": [
+        "Web・モバイル統一技術スタック",
+        "開発効率の最大化",
+        "コードリユーザビリティの向上"
+      ]
+    },
+    "combination_022": {
+      "courses": ["course_052", "course_019"],
+      "combination_name": "パフォーマンス最適化 + DB設計",
+      "synergy_effect": 4,
+      "description": "高性能システムの設計と実装",
+      "benefits": [
+        "スケーラブルなシステム構築",
+        "ボトルネックの特定と解決",
+        "ユーザー体験の向上"
+      ]
+    },
+    "combination_023": {
+      "courses": ["course_053", "course_025"],
+      "combination_name": "セキュリティ + Linux基盤",
+      "synergy_effect": 4,
+      "description": "セキュアなシステム運用の基盤",
+      "benefits": [
+        "インシデント対応力の向上",
+        "堅牢なシステム構築",
+        "コンプライアンス対応"
+      ]
+    },
+    "combination_024": {
+      "courses": ["course_054", "course_032"],
+      "combination_name": "プロダクトマネジメント + ユーザーリサーチ",
+      "synergy_effect": 4,
+      "description": "データドリブンなプロダクト開発",
+      "benefits": [
+        "ユーザーニーズに基づく製品企画",
+        "科学的なプロダクト改善",
+        "市場競争力の高い製品開発"
+      ]
+    },
+    "combination_025": {
+      "courses": ["course_057", "course_009"],
+      "combination_name": "フルスタック開発 + Next.js",
+      "synergy_effect": 3,
+      "description": "モダンWebアプリケーションの実践開発",
+      "benefits": [
+        "実務レベルの開発経験",
+        "最新技術トレンドの習得",
+        "ポートフォリオ品質の向上"
+      ]
+    },
+    "combination_026": {
+      "courses": ["course_036", "course_037"],
+      "combination_name": "機械学習 + ディープラーニング",
+      "synergy_effect": 5,
+      "description": "AI開発の包括的スキル",
+      "benefits": [
+        "従来手法から最新技術まで対応",
+        "問題に応じた最適な手法選択",
+        "AI研究開発の基盤構築"
+      ]
+    },
+    "combination_027": {
+      "courses": ["course_043", "course_041"],
+      "combination_name": "Flutter + Android開発",
+      "synergy_effect": 3,
+      "description": "Androidプラットフォームの深い理解",
+      "benefits": [
+        "ネイティブとクロスプラットフォーム両対応",
+        "プラットフォーム固有機能の活用",
+        "最適なモバイル開発手法の選択"
+      ]
+    },
+    "combination_028": {
+      "courses": ["course_055", "course_056"],
+      "combination_name": "DX + スタートアップ開発",
+      "synergy_effect": 3,
+      "description": "イノベーションとビジネス変革",
+      "benefits": [
+        "新規事業創出スキル",
+        "既存事業のデジタル変革",
+        "起業家精神と実践力"
+      ]
+    },
+    "combination_029": {
+      "courses": ["course_058", "course_052"],
+      "combination_name": "Eコマース + パフォーマンス最適化",
+      "synergy_effect": 4,
+      "description": "大規模ECサイトの実践開発",
+      "benefits": [
+        "高トラフィック対応技術",
+        "コンバージョン率向上技術",
+        "企業レベルの開発経験"
+      ]
+    },
+    "combination_030": {
+      "courses": ["course_059", "course_046"],
+      "combination_name": "SaaS開発 + マイクロサービス",
+      "synergy_effect": 5,
+      "description": "現代的なクラウドネイティブ開発",
+      "benefits": [
+        "スケーラブルなSaaS構築",
+        "分散システム設計の実践",
+        "エンタープライズアーキテクチャ"
+      ]
+    }
+  }
+}

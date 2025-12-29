@@ -1,15 +1,11 @@
 from pydantic import BaseModel
-from typing import List, Dict
+from typing import List
 
 class OptimizationRequest(BaseModel):
     career_name: str
     num_reads: int = 10
 
-class StageInfo(BaseModel):
-    stage_number: int
-    course_ids: List[str]
-
 class OptimizationResponse(BaseModel):
     career_name: str
-    stages: List[StageInfo]
+    recommended_course_ids: List[str]
     total_courses: int

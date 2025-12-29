@@ -3,7 +3,6 @@ from app.services.quantum_wrapper import quantum_service
 from app.schemas.optimization import (
     OptimizationRequest,
     OptimizationResponse,
-    StageInfo
 )
 
 router = APIRouter()
@@ -12,34 +11,19 @@ router = APIRouter()
 @router.post("/optimize", response_model=OptimizationResponse)
 async def optimize_learning_path(request: OptimizationRequest):
     """
-    職業に基づいて最適な学習パスを取得
+    職業に基づいて最適な学習パスを取得（フラットなリスト）
     """
     try:
-        # 量子アニーリングで最適化
-        result = quantum_service.optimize_for_career(
+        # 量子アニーリングで最適化（フラット化されたリスト）
+        course_ids = quantum_service.optimize_for_career(
             career_name=request.career_name,
             num_reads=request.num_reads
         )
 
-        # レスポンス形式に変換
-        stages = []
-        total_courses = 0
-
-        for stage_name, course_ids in result.items():
-            stage_num = int(stage_name.replace("stage", ""))
-            stages.append(StageInfo(
-                stage_number=stage_num,
-                course_ids=course_ids
-            ))
-            total_courses += len(course_ids)
-
-        # ステージ番号でソート
-        stages.sort(key=lambda x: x.stage_number)
-
         return OptimizationResponse(
             career_name=request.career_name,
-            stages=stages,
-            total_courses=total_courses
+            recommended_course_ids=course_ids,
+            total_courses=len(course_ids)
         )
 
     except Exception as e:

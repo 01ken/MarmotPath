@@ -13,7 +13,6 @@ import CourseDetailPanel from './CourseDetailPanel';
 import type { Node, Edge } from 'reactflow';
 import type { CourseNodeData } from '../../types';
 
-// NodeTypesを直接定義（型エラーを回避）
 const nodeTypes = {
   courseNode: CourseNode,
 };
@@ -37,7 +36,7 @@ export default function SkillTreeCanvas({ initialNodes, initialEdges }: Props) {
   }, []);
 
   return (
-    <div className="relative w-full h-[600px] bg-gray-50 rounded-lg border-2 border-gray-200">
+    <div className="relative w-full h-[650px] bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 rounded-2xl border-3 border-purple-200 shadow-inner overflow-hidden">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -47,15 +46,23 @@ export default function SkillTreeCanvas({ initialNodes, initialEdges }: Props) {
         onPaneClick={onPaneClick}
         nodeTypes={nodeTypes}
         fitView
-        minZoom={0.5}
+        minZoom={0.3}
         maxZoom={1.5}
       >
-        <Background color="#aaa" gap={16} />
-        <Controls />
+        <Background
+          color="#E9D5FF"
+          gap={20}
+          size={1}
+        />
+        <Controls className="!bg-white/80 !border-purple-200 !shadow-lg !rounded-xl" />
         <MiniMap
+          className="!bg-white/80 !border-2 !border-purple-200 !shadow-lg !rounded-xl"
           nodeColor={(node) => {
-            return node.data.isCompleted ? '#86efac' : '#93c5fd';
+            return node.data.isCompleted
+              ? 'rgb(251, 207, 232)' // pink-200
+              : 'rgb(221, 214, 254)'; // purple-200
           }}
+          maskColor="rgb(249, 168, 212, 0.3)"
         />
       </ReactFlow>
 

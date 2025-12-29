@@ -12,7 +12,7 @@ export interface Course {
   description: string;
   prerequisites: string[];
   skills_acquired: string[];
-  estimated_hours: number;
+  estimated_hours: int;
 }
 
 export interface CourseDetail extends Course {
@@ -26,21 +26,16 @@ export interface Skill {
   category: string;
 }
 
-export interface StageInfo {
-  stage_number: number;
-  course_ids: string[];
-}
-
 export interface OptimizationResult {
   career_name: string;
-  stages: StageInfo[];
+  recommended_course_ids: string[];
   total_courses: number;
 }
 
 // ReactFlow用の型
 export interface CourseNodeData {
   course: Course;
-  stageNumber: number;
+  layer: number; // ステージではなく依存関係の階層
   isCompleted: boolean;
   isRecommended: boolean;
 }

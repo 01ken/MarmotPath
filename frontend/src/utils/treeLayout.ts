@@ -1,17 +1,18 @@
-import type { Course, StageInfo } from '../types';
+import type { Course } from '../types';
 import type { Node, Edge } from 'reactflow';
 import type { CourseNodeData } from '../types';
+import { analyzeDependencies } from './dependencyAnalyzer';
 
 /**
- * スキルツリーのノードとエッジを生成
+ * スキルツリーのノードとエッジを生成（依存関係ベース）
  */
 export function buildSkillTree(
   courses: Course[],
-  stages: StageInfo[],
+  recommendedCourseIds: string[],
   completedCourses: string[]
 ): { nodes: Node<CourseNodeData>[]; edges: Edge[] } {
-  const nodes: Node<CourseNodeData>[] = [];
-  const edges: Edge[] = [];
+  // 依存関係を解析して階層を取得
+  const layers = analyzeDependencies(courses, recommendedCourseIds);
 
   // Course IDからCourseオブジェクトへのマップ
   const courseMap = new Map<string, Course>();
@@ -19,18 +20,30 @@ export function buildSkillTree(
     courseMap.set(course.course_id, course);
   });
 
-  // ステージごとにノードを配置
-  const STAGE_HEIGHT = 200;
-  const NODE_WIDTH = 280;
-  const HORIZONTAL_SPACING = 50;
+  // 階層ごとに講座をグループ化
+  const layerGroups = new Map<number, string[]>();
+  layers.forEach((layer, courseId) => {
+    if (!layerGroups.has(layer)) {
+      layerGroups.set(layer, []);
+    }
+    layerGroups.get(layer)!.push(courseId);
+  });
 
-  stages.forEach((stage) => {
-    const y = (stage.stage_number - 1) * STAGE_HEIGHT;
-    const coursesInStage = stage.course_ids.length;
-    const totalWidth = coursesInStage * NODE_WIDTH + (coursesInStage - 1) * HORIZONTAL_SPACING;
+  // レイアウト設定
+  const LAYER_HEIGHT = 220;
+  const NODE_WIDTH = 280;
+  const HORIZONTAL_SPACING = 60;
+
+  const nodes: Node<CourseNodeData>[] = [];
+
+  // 各階層でノードを配置
+  layerGroups.forEach((courseIds, layer) => {
+    const y = layer * LAYER_HEIGHT;
+    const coursesInLayer = courseIds.length;
+    const totalWidth = coursesInLayer * NODE_WIDTH + (coursesInLayer - 1) * HORIZONTAL_SPACING;
     const startX = -totalWidth / 2;
 
-    stage.course_ids.forEach((courseId, index) => {
+    courseIds.forEach((courseId, index) => {
       const course = courseMap.get(courseId);
       if (!course) return;
 
@@ -42,33 +55,54 @@ export function buildSkillTree(
         position: { x, y },
         data: {
           course,
-          stageNumber: stage.stage_number,
+          layer,
           isCompleted: completedCourses.includes(courseId),
-          isRecommended: true, // 最適化結果なので全て推奨
+          isRecommended: true,
         },
       });
     });
   });
 
-  // エッジの生成（前提条件に基づく）
-  nodes.forEach((node) => {
-    const course = node.data.course;
+  // エッジの生成（依存関係に基づく）
+  const edges: Edge[] = [];
+  const skillProviders = new Map<string, string[]>();
 
-    // 前提スキルを持つ講座を探す
-    course.prerequisites.forEach((prereqSkill) => {
-      // このスキルを提供する講座を探す
-      nodes.forEach((sourceNode) => {
-        if (sourceNode.id === node.id) return; // 自分自身は除外
+  // スキルを提供する講座のマップを作成
+  recommendedCourseIds.forEach((courseId) => {
+    const course = courseMap.get(courseId);
+    if (!course) return;
 
-        const sourceCourse = sourceNode.data.course;
-        if (sourceCourse.skills_acquired.includes(prereqSkill)) {
+    course.skills_acquired.forEach((skill) => {
+      if (!skillProviders.has(skill)) {
+        skillProviders.set(skill, []);
+      }
+      skillProviders.get(skill)!.push(courseId);
+    });
+  });
+
+  // 各講座の前提スキルに基づいてエッジを作成
+  recommendedCourseIds.forEach((courseId) => {
+    const course = courseMap.get(courseId);
+    if (!course) return;
+
+    course.prerequisites.forEach((requiredSkill) => {
+      const providers = skillProviders.get(requiredSkill) || [];
+      providers.forEach((providerId) => {
+        if (providerId !== courseId) {
           edges.push({
-            id: `${sourceNode.id}-${node.id}`,
-            source: sourceNode.id,
-            target: node.id,
+            id: `${providerId}-${courseId}`,
+            source: providerId,
+            target: courseId,
             type: 'smoothstep',
             animated: false,
-            style: { stroke: '#94a3b8' },
+            style: {
+              stroke: '#EC4899', // ピンク系
+              strokeWidth: 2,
+            },
+            markerEnd: {
+              type: 'arrowclosed',
+              color: '#EC4899',
+            },
           });
         }
       });

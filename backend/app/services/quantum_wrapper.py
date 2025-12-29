@@ -26,26 +26,31 @@ class QuantumOptimizationService:
             combinations_data=self.combinations_data
         )
 
-    def optimize_for_career(self, career_name: str, num_reads: int = 10) -> dict:
+    def optimize_for_career(self, career_name: str, num_reads: int = 10) -> list[str]:
         """
-        職業名から最適な学習パスを取得
+        職業名から最適な学習パスを取得（フラット化）
 
         Args:
             career_name: 職業名（例: "Webデザイナー"）
             num_reads: サンプリング回数
 
         Returns:
-            ステージごとの講座リスト
-            {
-                "stage1": ["course_001", "course_003"],
-                "stage2": ["course_004"],
-                ...
-            }
+            推奨講座IDのリスト（フラット）
+            例: ["course_001", "course_003", "course_004", ...]
         """
-        return self.optimizer.optimize_learning_path(
+        # ステージ形式で結果を取得
+        stages_result = self.optimizer.optimize_learning_path(
             goal=career_name,
             num_reads=num_reads
         )
+
+        # フラット化: 全ステージの講座をまとめる
+        all_courses = []
+        for stage_name, course_ids in stages_result.items():
+            all_courses.extend(course_ids)
+
+        # 重複削除（念のため）
+        return list(set(all_courses))
 
 
 # グローバルインスタンス

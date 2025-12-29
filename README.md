@@ -7,19 +7,15 @@
 ```commandline
 cd ../
 ```
-2. Viteを使ってReactプロジェクトを作成
-```commandline
-npm create vite@latest frontend -- --template react-ts
-```
-3. rontendディレクトリに移動
+2. frontendディレクトリに移動
 ```commandline
 cd frontend
 ```
-4. 依存パッケージのインストール
+3. 依存パッケージのインストール
 ```commandline
 npm install
 ```
-5. 追加パッケージのインストール
+4. 追加パッケージのインストール
 ```commandline
 npm install reactflow axios zustand
 npm install -D tailwindcss@^3.3.6 postcss@^8.4.32 autoprefixer@^10.4.16
